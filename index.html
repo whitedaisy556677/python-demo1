@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="icon" href="static/images/favicon-16x16.png" type="image/png" sizes="16x16">
+    <!-- <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style> -->
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="./static/script.js"></script>
+    
+</head>
+<body>
+    <h1>Demo a Website</h1>
+    <section> 
+        First section
+        <h2>Introduction</h2>
+        
+        <p>
+            This is the first paragraph in the first section.
+        
+        </p>
+        <!-- create unordered list -->
+        <ul>
+            <li><a href="https://example.com/cake">Cake</a></li>
+            <li><a href="https://example.com/candy">Candy</a></li>
+            <li><a href="https://example.com/noodles">Noodles</a></li>
+        </ul>
+    </section>
+    <section>
+        Second section
+        <h2>Form</h2>
+        <p>This is a form to input user information.</p>
+        <!-- create input boxes and a button -->
+        <form action="" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Input your full name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Input email address @mail.com"><br>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" value="18" min="18" max="90"><br>
+            <!-- Add gender in radio type -->
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="female" name="gender" value="female" checked="checked">
+            <label for="male">Female</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+
+            <br>
+            <input type="submit" value="Recheck" id="recheckbutton">
+            <input type="submit" value="Submit" id="submitbutton">
+        </form>
+    </section>
+    <section>
+        <h2>Third Section</h2>
+        <p>This is to upload a spreadsheet/table.</p>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+            <tr contenteditable="true">
+                <td>John</td>
+                <td>Doe</td>
+                <td>30</td>
+            </tr>
+            <tr contenteditable="true">
+                <td>Jane</td>
+                <td>Smith</td>
+                <td>25</td>
+            </tr>
+            <tr contenteditable="true">
+                <td>Mike</td>
+                <td>Johnson</td>
+                <td>40</td>
+            </tr>
+        </table>
+        <input type="file" id="excel-file" accept=".xlsx, .xls" />
+    </section>
+</body>
+</html>
